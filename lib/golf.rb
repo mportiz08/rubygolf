@@ -1,10 +1,10 @@
 class Golf
-  def self.hole1(array)
-    array.inject(:*)
+  def self.hole1 a
+    a.inject :*
   end
   
-  def self.hole2(str)
-    str.split(' ').sort_by{|s|s.chars.to_a[1]}.join(' ')
+  def self.hole2 s
+    s.split(' ').sort_by{|s|s.chars.to_a[1]}.join(' ')
   end
   
   def self.hole3 n
