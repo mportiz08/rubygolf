@@ -7,8 +7,8 @@ class Golf
     str.split(' ').sort_by{|s|s.chars.to_a[1]}.join(' ')
   end
   
-  def self.hole3(num)
-    # TODO
+  def self.hole3 n
+    n==0?1:n*self.hole3(n-1)
   end
   
   def self.hole4(array)
