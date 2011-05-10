@@ -4,7 +4,7 @@ class Golf
   end
   
   def self.hole2(str)
-    # TODO
+    str.split(' ').sort_by{|s|s.chars.to_a[1]}.join(' ')
   end
   
   def self.hole3(num)
