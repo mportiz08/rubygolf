@@ -19,8 +19,8 @@ class Golf
     # TODO
   end
   
-  def self.hole6(num)
-    # TODO
+  def self.hole6 n
+    (1..n).map{|a|if a%3==0&&a%5==0 then"fizzbuzz"elsif a%3==0 then"fizz"elsif a%5==0 then"buzz"else a end}
   end
   
   def self.hole7(array)
